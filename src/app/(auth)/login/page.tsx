@@ -35,7 +35,7 @@ export default function SignInOne() {
           signIn("credentials", {
             email: authData.email,
             password: authData.password,
-            callbackUrl: "/",
+            callbackUrl: "https://nextjs-auth-beta-gold.vercel.app/",
             redirect: true,
           });
         } else if (response.status == 400) {
