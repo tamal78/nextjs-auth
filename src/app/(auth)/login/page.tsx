@@ -102,6 +102,13 @@ export default function SignInOne() {
                 Sign Up
               </Link>
             </p>
+               {searchParam.get('message') ? (
+              <p className='bg-green-400 font-bold rounded-md p-4'>
+                `{searchParam.get('message')} Login to your account`
+              </p>
+            ) : (
+              <></>
+            )}
             <form action="#" method="POST" className="mt-8">
               <div className="space-y-5">
                 <div>
