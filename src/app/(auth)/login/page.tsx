@@ -104,7 +104,7 @@ export default function SignInOne() {
             </p>
                {searchParam.get('message') ? (
               <p className='bg-green-400 font-bold rounded-md p-4'>
-                `{searchParam.get('message')} Login to your account`
+                {searchParam.get('message')} Login to your account`
               </p>
             ) : (
               <></>
